@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive chronological timeline of the Gujarat Sultanate (1391 – 1592 CE).">
+  <title>Gujarat Sultanate (1391 – 1592 CE) | Interactive Timeline</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <div class="header-main-row">
+        <div>
+          <h1 class="site-title">Gujarat Sultanate</h1>
+          <p class="site-subtitle">Chronological History of the Muzaffarid Dynasty (1391 – 1592 CE)</p>
+        </div>
+        <div class="header-actions">
+          <button type="button" id="theme-toggle-btn" class="nav-btn" title="Toggle Light or Dark Mode">Dark Mode</button>
+          <button type="button" id="print-btn" class="nav-btn" title="Print Timeline Document">Print</button>
+        </div>
+      </div>
+
+      <!-- Phase Navigation Tabs -->
+      <nav class="phase-tabs" aria-label="Era Phases">
+        <button type="button" class="phase-tab active" data-phase="all">All Eras</button>
+        <button type="button" class="phase-tab phase-tab-p1" data-phase="1">Phase 1: Rise (1391–1442)</button>
+        <button type="button" class="phase-tab phase-tab-p2" data-phase="2">Phase 2: Intrigue (1442–1458)</button>
+        <button type="button" class="phase-tab phase-tab-p3" data-phase="3">Phase 3: Golden Age (1458–1511)</button>
+        <button type="button" class="phase-tab phase-tab-p4" data-phase="4">Phase 4: Climax (1511–1537)</button>
+        <button type="button" class="phase-tab phase-tab-p5" data-phase="5">Epilogue (1537–1592)</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Navigation & Controls Bar -->
+  <nav class="control-bar" role="navigation" aria-label="Timeline Controls">
+    <div class="control-container">
+      <div class="search-row">
+        <div class="search-wrapper">
+          <input 
+            type="search" 
+            id="search-input" 
+            class="search-input" 
+            placeholder="Search events, rulers (e.g. Begada), battles, places, or dates..."
+            aria-label="Search historical events"
+            autocomplete="off"
+            spellcheck="false"
+          >
+          <button type="button" id="search-clear-btn" class="clear-btn" title="Clear Search">Clear</button>
+        </div>
+
+        <div class="view-switch" role="group" aria-label="Display View">
+          <button type="button" id="view-timeline-btn" class="switch-btn active">Timeline</button>
+          <button type="button" id="view-ledger-btn" class="switch-btn">Table</button>
+          <button type="button" id="view-grid-btn" class="switch-btn">Cards</button>
+        </div>
+      </div>
+
+      <!-- Category Filter Buttons -->
+      <div class="category-row">
+        <span class="category-label">Filter:</span>
+        <div class="category-pills" id="category-pills">
+          <!-- Populated by JS with distinct category colors -->
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Filter Status Strip -->
+  <div class="status-strip" id="status-strip">
+    <div class="status-container">
+      <span id="active-filter-summary" class="filter-summary">Showing All Events</span>
+      <button type="button" id="reset-filters-btn" class="reset-btn">Reset</button>
+    </div>
+  </div>
+
+  <!-- Main Historical Content Container -->
+  <main id="main-display-container" class="main-content" role="main">
+    <!-- Populated dynamically by app.js -->
+  </main>
+
+  <!-- Event Detail Modal Dialog -->
+  <div id="event-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-event-title">
+    <div class="modal-content">
+      <header class="modal-header">
+        <span class="modal-label">Historical Event Dossier</span>
+        <button type="button" id="modal-close-btn" class="modal-close-btn" title="Close">Close</button>
+      </header>
+
+      <div id="modal-content-body" class="modal-body">
+        <!-- Populated dynamically -->
+      </div>
+
+      <footer class="modal-footer">
+        <div class="modal-nav">
+          <button type="button" id="modal-prev-btn" class="btn">Previous</button>
+          <button type="button" id="modal-next-btn" class="btn">Next</button>
+        </div>
+        <div class="modal-actions">
+          <button type="button" id="modal-copy-btn" class="btn">Copy Citation</button>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Snappy Toast Message -->
+  <div id="toast-msg" class="toast-msg" role="status" aria-live="polite"></div>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-info">
+        <p><strong>Gujarat Sultanate Historical Chronicle (1391 – 1592 CE)</strong></p>
+        <p>Primary chronicles: Mirat-i-Sikandari, Tabakat-i-Akbari, Tarikh-i-Firishta, and Decadas da Asia.</p>
+      </div>
+      <div class="footer-shortcuts">
+        <span>Press <strong>/</strong> to search</span>
+        <span>Press <strong>Esc</strong> to close</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

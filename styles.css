@@ -1,0 +1,1045 @@
+/* ==========================================================================
+   GUJARAT SULTANATE CHRONOLOGICAL TIMELINE (1391 - 1592 CE)
+   COLORFUL EDITORIAL DESIGN WITH DISTINCT CATEGORY & ERA ACCENTS
+   ZERO GRADIENTS, ZERO ANIMATIONS, ZERO EMOJIS, GPU-OPTIMIZED
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root {
+  /* Surface & Base */
+  --bg-app: #fbfbfd;
+  --bg-surface: #ffffff;
+  --bg-subtle: #f3f4f6;
+  --bg-hover: #e9eaee;
+  
+  /* Text */
+  --text-primary: #151518;
+  --text-secondary: #404046;
+  --text-muted: #6e6e76;
+  --text-inverted: #ffffff;
+  
+  /* Neutral Borders */
+  --border-strong: #151518;
+  --border-medium: #82828c;
+  --border-subtle: #d6d7de;
+  --border-divider: #e7e8ec;
+
+  /* Category Signature Colors (Solid, Vibrant, No Gradients) */
+  --c-military: #b52828;
+  --c-military-bg: #fdf0f0;
+  --c-military-border: #b52828;
+
+  --c-political: #1d568c;
+  --c-political-bg: #eef4fa;
+  --c-political-border: #1d568c;
+
+  --c-dynastic: #732766;
+  --c-dynastic-bg: #fbf0f8;
+  --c-dynastic-border: #732766;
+
+  --c-architectural: #1b6e3b;
+  --c-architectural-bg: #edf8f2;
+  --c-architectural-border: #1b6e3b;
+
+  --c-maritime: #126577;
+  --c-maritime-bg: #edf7fa;
+  --c-maritime-border: #126577;
+
+  --c-spiritual: #99680c;
+  --c-spiritual-bg: #fdf6eb;
+  --c-spiritual-border: #99680c;
+
+  --c-geopolitical: #854c29;
+  --c-geopolitical-bg: #f8f2ee;
+  --c-geopolitical-border: #854c29;
+
+  --c-treaty: #993f21;
+  --c-treaty-bg: #faf0ec;
+  --c-treaty-border: #993f21;
+
+  --c-assassination: #a81d1d;
+  --c-assassination-bg: #fbeeee;
+  --c-assassination-border: #a81d1d;
+
+  --c-cultural: #296953;
+  --c-cultural-bg: #edf6f3;
+  --c-cultural-border: #296953;
+
+  --c-gold: #946808;
+  --c-gold-bg: #fcf6ea;
+  --c-gold-border: #946808;
+
+  /* Phase Header Tones */
+  --phase-1-color: #1d568c;
+  --phase-1-bg: #eef4fa;
+  --phase-2-color: #732766;
+  --phase-2-bg: #fbf0f8;
+  --phase-3-color: #946808;
+  --phase-3-bg: #fdf8eb;
+  --phase-4-color: #b52828;
+  --phase-4-bg: #fdf0f0;
+  --phase-5-color: #555260;
+  --phase-5-bg: #f2f1f5;
+
+  /* Typography */
+  --font-serif: 'Cinzel', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 36px;
+  --max-width: 1240px;
+}
+
+[data-theme="dark"] {
+  --bg-app: #0d0d10;
+  --bg-surface: #151518;
+  --bg-subtle: #1e1e24;
+  --bg-hover: #282830;
+  
+  --text-primary: #f2f2f5;
+  --text-secondary: #bcbcc4;
+  --text-muted: #848490;
+  --text-inverted: #0d0d10;
+  
+  --border-strong: #f2f2f5;
+  --border-medium: #7a7a88;
+  --border-subtle: #32323c;
+  --border-divider: #24242c;
+
+  /* Dark mode variants */
+  --c-military: #ea6060;
+  --c-military-bg: #2b1313;
+  --c-military-border: #ea6060;
+
+  --c-political: #62a3e6;
+  --c-political-bg: #112133;
+  --c-political-border: #62a3e6;
+
+  --c-dynastic: #d975c6;
+  --c-dynastic-bg: #2b1226;
+  --c-dynastic-border: #d975c6;
+
+  --c-architectural: #5fc986;
+  --c-architectural-bg: #102618;
+  --c-architectural-border: #5fc986;
+
+  --c-maritime: #56bdd4;
+  --c-maritime-bg: #0f2329;
+  --c-maritime-border: #56bdd4;
+
+  --c-spiritual: #e6b247;
+  --c-spiritual-bg: #291e0a;
+  --c-spiritual-border: #e6b247;
+
+  --c-geopolitical: #d99368;
+  --c-geopolitical-bg: #28170e;
+  --c-geopolitical-border: #d99368;
+
+  --c-treaty: #e67d5a;
+  --c-treaty-bg: #2b140d;
+  --c-treaty-border: #e67d5a;
+
+  --c-assassination: #f06262;
+  --c-assassination-bg: #2b1010;
+  --c-assassination-border: #f06262;
+
+  --c-cultural: #5ec49f;
+  --c-cultural-bg: #0f241c;
+  --c-cultural-border: #5ec49f;
+
+  --c-gold: #deb04e;
+  --c-gold-bg: #291f0a;
+  --c-gold-border: #deb04e;
+
+  --phase-1-color: #62a3e6;
+  --phase-1-bg: #112133;
+  --phase-2-color: #d975c6;
+  --phase-2-bg: #2b1226;
+  --phase-3-color: #deb04e;
+  --phase-3-bg: #291f0a;
+  --phase-4-color: #ea6060;
+  --phase-4-bg: #2b1313;
+  --phase-5-color: #a4a1b0;
+  --phase-5-bg: #1c1a24;
+}
+
+/* ==========================================================================
+   RESET: ZERO ANIMATIONS, ZERO TRANSITIONS, GPU ACCELERATION
+   ========================================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: none !important;
+  animation: none !important;
+}
+
+html {
+  font-size: 16px;
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  scroll-behavior: auto;
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  min-height: 100vh;
+  transform: translateZ(0);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Clean Button Base */
+button {
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+  padding: 7px 14px;
+  border-radius: 4px;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+button:hover {
+  background: var(--bg-hover);
+  border-color: var(--border-strong);
+}
+
+button:active {
+  background: var(--text-primary);
+  color: var(--text-inverted);
+}
+
+button:focus-visible {
+  outline: 2px solid var(--text-primary);
+  outline-offset: 1px;
+}
+
+input[type="search"] {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+  padding: 8px 12px;
+  border-radius: 4px;
+  outline: none;
+}
+
+input[type="search"]:focus {
+  border-color: var(--text-primary);
+}
+
+/* ==========================================================================
+   SITE HEADER & PHASE TABS
+   ========================================================================== */
+.site-header {
+  border-bottom: 1px solid var(--border-divider);
+  background-color: var(--bg-surface);
+  padding: var(--space-md) var(--space-md) 0;
+}
+
+.header-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.header-main-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.site-title {
+  font-family: var(--font-serif);
+  font-size: 1.85rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.site-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.header-actions {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: center;
+}
+
+.nav-btn {
+  font-size: 0.82rem;
+  padding: 6px 14px;
+  border-radius: 4px;
+}
+
+/* Phase Tabs Navigation */
+.phase-tabs {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  border-bottom: 1px solid var(--border-divider);
+}
+
+.phase-tab {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 10px 16px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  border-radius: 0;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.phase-tab:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.phase-tab.active {
+  background: transparent;
+  color: var(--text-primary);
+  border-bottom: 3px solid var(--text-primary);
+}
+
+.phase-tab-p1.active { border-bottom-color: var(--phase-1-color); color: var(--phase-1-color); }
+.phase-tab-p2.active { border-bottom-color: var(--phase-2-color); color: var(--phase-2-color); }
+.phase-tab-p3.active { border-bottom-color: var(--phase-3-color); color: var(--phase-3-color); }
+.phase-tab-p4.active { border-bottom-color: var(--phase-4-color); color: var(--phase-4-color); }
+.phase-tab-p5.active { border-bottom-color: var(--phase-5-color); color: var(--phase-5-color); }
+
+/* ==========================================================================
+   NAVIGATION & CONTROLS BAR
+   ========================================================================== */
+.control-bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: var(--space-sm) var(--space-md);
+  transform: translateZ(0);
+}
+
+.control-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.search-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.search-wrapper {
+  position: relative;
+  flex: 1;
+  min-width: 260px;
+}
+
+.search-input {
+  width: 100%;
+  padding-right: 60px;
+}
+
+.clear-btn {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  padding: 4px 8px;
+}
+
+.clear-btn:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.view-switch {
+  display: flex;
+  gap: 2px;
+  background: var(--bg-subtle);
+  padding: 2px;
+  border-radius: 4px;
+  border: 1px solid var(--border-subtle);
+}
+
+.switch-btn {
+  font-size: 0.8rem;
+  padding: 6px 14px;
+  border: none;
+  background: transparent;
+  border-radius: 3px;
+  color: var(--text-secondary);
+}
+
+.switch-btn:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.switch-btn.active {
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  font-weight: 600;
+  border: 1px solid var(--border-subtle);
+}
+
+/* Category Filter Pills */
+.category-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.category-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-right: 2px;
+}
+
+.category-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.cat-pill {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 4px 10px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: 3px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.cat-pill:hover {
+  border-color: var(--border-strong);
+  color: var(--text-primary);
+}
+
+.cat-pill.active {
+  background: var(--text-primary);
+  color: var(--text-inverted);
+  border-color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Category Specific Active Pills */
+.cat-pill.active[data-category="Military"] { background: var(--c-military); border-color: var(--c-military); color: #fff; }
+.cat-pill.active[data-category="Political"] { background: var(--c-political); border-color: var(--c-political); color: #fff; }
+.cat-pill.active[data-category="Dynastic"] { background: var(--c-dynastic); border-color: var(--c-dynastic); color: #fff; }
+.cat-pill.active[data-category="Architectural"] { background: var(--c-architectural); border-color: var(--c-architectural); color: #fff; }
+.cat-pill.active[data-category="Maritime"] { background: var(--c-maritime); border-color: var(--c-maritime); color: #fff; }
+.cat-pill.active[data-category="Spiritual"] { background: var(--c-spiritual); border-color: var(--c-spiritual); color: #fff; }
+.cat-pill.active[data-category="Geopolitical"] { background: var(--c-geopolitical); border-color: var(--c-geopolitical); color: #fff; }
+.cat-pill.active[data-category="Treaty"] { background: var(--c-treaty); border-color: var(--c-treaty); color: #fff; }
+.cat-pill.active[data-category="Assassination"] { background: var(--c-assassination); border-color: var(--c-assassination); color: #fff; }
+.cat-pill.active[data-category="Cultural"] { background: var(--c-cultural); border-color: var(--c-cultural); color: #fff; }
+
+/* Status Strip */
+.status-strip {
+  background: var(--bg-subtle);
+  border-bottom: 1px solid var(--border-divider);
+  padding: 6px var(--space-md);
+}
+
+.status-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.filter-summary {
+  color: var(--text-secondary);
+}
+
+.reset-btn {
+  font-size: 0.75rem;
+  padding: 2px 10px;
+  border-radius: 3px;
+}
+
+/* ==========================================================================
+   CATEGORY BADGES (Vibrant Solid Styling)
+   ========================================================================== */
+.badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  line-height: 1.35;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.badge-military { background: var(--c-military-bg); border-color: var(--c-military-border); color: var(--c-military); }
+.badge-political { background: var(--c-political-bg); border-color: var(--c-political-border); color: var(--c-political); }
+.badge-dynastic { background: var(--c-dynastic-bg); border-color: var(--c-dynastic-border); color: var(--c-dynastic); }
+.badge-architectural { background: var(--c-architectural-bg); border-color: var(--c-architectural-border); color: var(--c-architectural); }
+.badge-spiritual { background: var(--c-spiritual-bg); border-color: var(--c-spiritual-border); color: var(--c-spiritual); }
+.badge-maritime { background: var(--c-maritime-bg); border-color: var(--c-maritime-border); color: var(--c-maritime); }
+.badge-geopolitical { background: var(--c-geopolitical-bg); border-color: var(--c-geopolitical-border); color: var(--c-geopolitical); }
+.badge-treaty { background: var(--c-treaty-bg); border-color: var(--c-treaty-border); color: var(--c-treaty); }
+.badge-assassination { background: var(--c-assassination-bg); border-color: var(--c-assassination-border); color: var(--c-assassination); }
+.badge-cultural { background: var(--c-cultural-bg); border-color: var(--c-cultural-border); color: var(--c-cultural); }
+
+.badge-milestone {
+  background: var(--c-gold-bg);
+  border-color: var(--c-gold-border);
+  color: var(--c-gold);
+}
+
+/* ==========================================================================
+   MAIN CONTENT & TIMELINE VIEW
+   ========================================================================== */
+.main-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-md);
+  min-height: 60vh;
+}
+
+.empty-state {
+  text-align: center;
+  padding: var(--space-xl) var(--space-md);
+  border: 1px dashed var(--border-subtle);
+  background: var(--bg-surface);
+  border-radius: 4px;
+  margin: var(--space-lg) 0;
+}
+
+.empty-state-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.empty-state-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: var(--space-md);
+}
+
+/* Era Phase Banner */
+.phase-banner {
+  border-left: 4px solid var(--border-strong);
+  background: var(--bg-surface);
+  border-radius: 0 4px 4px 0;
+  padding: var(--space-md);
+  margin-bottom: var(--space-md);
+  border-top: 1px solid var(--border-divider);
+  border-right: 1px solid var(--border-divider);
+  border-bottom: 1px solid var(--border-divider);
+}
+
+.phase-banner.phase-banner-1 { border-left-color: var(--phase-1-color); }
+.phase-banner.phase-banner-2 { border-left-color: var(--phase-2-color); }
+.phase-banner.phase-banner-3 { border-left-color: var(--phase-3-color); }
+.phase-banner.phase-banner-4 { border-left-color: var(--phase-4-color); }
+.phase-banner.phase-banner-5 { border-left-color: var(--phase-5-color); }
+
+.phase-banner-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-bottom: 4px;
+}
+
+.phase-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.phase-span {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.phase-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+/* Timeline Layout */
+.timeline-view {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.timeline-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  position: relative;
+  padding-left: 24px;
+}
+
+.timeline-list::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  background-color: var(--border-subtle);
+}
+
+/* Event Card with Colored Left Stripe */
+.timeline-card {
+  position: relative;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-left: 5px solid var(--border-strong);
+  border-radius: 4px;
+  padding: var(--space-md);
+}
+
+/* Color Coded Card Accents */
+.timeline-card.cat-military { border-left-color: var(--c-military); }
+.timeline-card.cat-political { border-left-color: var(--c-political); }
+.timeline-card.cat-dynastic { border-left-color: var(--c-dynastic); }
+.timeline-card.cat-architectural { border-left-color: var(--c-architectural); }
+.timeline-card.cat-maritime { border-left-color: var(--c-maritime); }
+.timeline-card.cat-spiritual { border-left-color: var(--c-spiritual); }
+.timeline-card.cat-geopolitical { border-left-color: var(--c-geopolitical); }
+.timeline-card.cat-treaty { border-left-color: var(--c-treaty); }
+.timeline-card.cat-assassination { border-left-color: var(--c-assassination); }
+.timeline-card.cat-cultural { border-left-color: var(--c-cultural); }
+
+.timeline-dot {
+  position: absolute;
+  left: -24px;
+  top: 22px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--bg-surface);
+  border: 2px solid var(--border-strong);
+  z-index: 2;
+}
+
+.timeline-card.cat-military .timeline-dot { border-color: var(--c-military); }
+.timeline-card.cat-political .timeline-dot { border-color: var(--c-political); }
+.timeline-card.cat-dynastic .timeline-dot { border-color: var(--c-dynastic); }
+.timeline-card.cat-architectural .timeline-dot { border-color: var(--c-architectural); }
+.timeline-card.cat-maritime .timeline-dot { border-color: var(--c-maritime); }
+.timeline-card.cat-spiritual .timeline-dot { border-color: var(--c-spiritual); }
+.timeline-card.cat-geopolitical .timeline-dot { border-color: var(--c-geopolitical); }
+.timeline-card.cat-treaty .timeline-dot { border-color: var(--c-treaty); }
+.timeline-card.cat-assassination .timeline-dot { border-color: var(--c-assassination); }
+
+.timeline-card.milestone .timeline-dot {
+  background: var(--c-gold);
+  border-color: var(--c-gold);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-bottom: 6px;
+}
+
+.card-year-group {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-sm);
+}
+
+.card-year {
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.card-hijri {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.card-badges {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  line-height: 1.35;
+}
+
+.card-figures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: var(--space-sm);
+}
+
+.figure-chip {
+  font-size: 0.75rem;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: 3px;
+  padding: 2px 7px;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.figure-chip:hover {
+  background: var(--text-primary);
+  color: var(--text-inverted);
+  border-color: var(--text-primary);
+}
+
+.card-narrative {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin-bottom: var(--space-xs);
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid var(--border-divider);
+  padding-top: 6px;
+  margin-top: 6px;
+}
+
+.btn-sm {
+  font-size: 0.78rem;
+  padding: 4px 12px;
+  border-radius: 3px;
+}
+
+/* ==========================================================================
+   VIEW 2: TABLE VIEW
+   ========================================================================== */
+.table-view {
+  overflow-x: auto;
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+  background: var(--bg-surface);
+}
+
+.events-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.88rem;
+}
+
+.events-table th {
+  background: var(--bg-subtle);
+  border-bottom: 2px solid var(--border-strong);
+  padding: 10px 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.events-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.events-table th.sortable:hover {
+  background: var(--bg-hover);
+}
+
+.events-table td {
+  border-bottom: 1px solid var(--border-divider);
+  padding: 12px 14px;
+  vertical-align: top;
+}
+
+.events-table tr:hover td {
+  background: var(--bg-subtle);
+}
+
+/* ==========================================================================
+   VIEW 3: CARDS GRID VIEW
+   ========================================================================== */
+.cards-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-md);
+}
+
+.grid-item {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-left: 5px solid var(--border-strong);
+  border-radius: 4px;
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.grid-item.cat-military { border-left-color: var(--c-military); }
+.grid-item.cat-political { border-left-color: var(--c-political); }
+.grid-item.cat-dynastic { border-left-color: var(--c-dynastic); }
+.grid-item.cat-architectural { border-left-color: var(--c-architectural); }
+.grid-item.cat-maritime { border-left-color: var(--c-maritime); }
+.grid-item.cat-spiritual { border-left-color: var(--c-spiritual); }
+.grid-item.cat-geopolitical { border-left-color: var(--c-geopolitical); }
+.grid-item.cat-treaty { border-left-color: var(--c-treaty); }
+.grid-item.cat-assassination { border-left-color: var(--c-assassination); }
+.grid-item.cat-cultural { border-left-color: var(--c-cultural); }
+
+/* ==========================================================================
+   MODAL / HISTORICAL EVENT DOSSIER
+   ========================================================================== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md);
+  transform: translateZ(0);
+}
+
+.modal-overlay.open {
+  display: flex;
+}
+
+.modal-content {
+  background: var(--bg-surface);
+  border: 2px solid var(--border-strong);
+  border-radius: 6px;
+  width: 100%;
+  max-width: 720px;
+  max-height: 90vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header {
+  border-bottom: 1px solid var(--border-divider);
+  padding: var(--space-md);
+  background: var(--bg-subtle);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.modal-close-btn {
+  font-size: 0.8rem;
+  padding: 4px 10px;
+}
+
+.modal-body {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.modal-title {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.modal-narrative {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--text-primary);
+  border-left: 4px solid var(--border-strong);
+  padding-left: var(--space-md);
+  background: var(--bg-subtle);
+  padding-top: var(--space-sm);
+  padding-bottom: var(--space-sm);
+  border-radius: 0 4px 4px 0;
+}
+
+.modal-section {
+  border-top: 1px solid var(--border-divider);
+  padding-top: var(--space-sm);
+}
+
+.modal-section-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: var(--space-xs);
+  letter-spacing: 0.05em;
+}
+
+.modal-footer {
+  border-top: 1px solid var(--border-divider);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--bg-subtle);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.modal-nav, .modal-actions {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+/* Toast */
+.toast-msg {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--text-primary);
+  color: var(--text-inverted);
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  z-index: 2000;
+  display: none;
+}
+
+.toast-msg.show {
+  display: block;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--border-divider);
+  background: var(--bg-surface);
+  padding: var(--space-lg) var(--space-md);
+  margin-top: var(--space-xl);
+}
+
+.footer-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.footer-shortcuts {
+  display: flex;
+  gap: var(--space-md);
+  color: var(--text-muted);
+}
+
+/* Print */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .site-header, .control-bar, .status-strip, .modal-overlay, .toast-msg, .site-footer, button {
+    display: none !important;
+  }
+  .timeline-card {
+    border: 1px solid #000000 !important;
+    page-break-inside: avoid;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-main-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .search-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .timeline-list {
+    padding-left: 16px;
+  }
+  .timeline-dot {
+    left: -16px;
+    width: 8px;
+    height: 8px;
+  }
+}
